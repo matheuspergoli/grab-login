@@ -47,10 +47,20 @@ body {
   width: 25rem;
   margin: 25rem auto 0 auto;
 }
+@media (max-width: 768px) {
+  .logo {
+    margin-top: 15rem;
+  }
+}
 
 .formulario {
   width: 30rem;
   margin: 10rem auto 0 auto;
+}
+@media (max-width: 768px) {
+  .formulario {
+    margin-top: 10rem;
+  }
 }
 .formulario input {
   width: 100%;
@@ -100,6 +110,18 @@ body {
   color: #F8F8F8;
   text-align: left;
   font-size: 1.5rem;
+}
+
+.ajuda {
+  width: 20rem;
+  color: #F8F8F8;
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 15rem auto 0 auto;
+}
+.ajuda a {
+  color: #F8F8F8;
+  font-weight: bold;
 }
 
 .hero-img {

@@ -27,11 +27,19 @@ body {
 .logo {
   width: 25rem;
   margin: 25rem auto 0 auto;
+
+  @include media(768px) {
+    margin-top: 15rem;
+  }
 }
 
 .formulario {
   width: 30rem;
   margin: 10rem auto 0 auto;
+
+  @include media(768px) {
+    margin-top: 10rem;
+  }
 
   input {
     width: 100%;
@@ -87,6 +95,19 @@ body {
     color: $cinza;
     text-align: left;
     font-size: 1.5rem;
+  }
+}
+
+.ajuda {
+  width: 20rem;
+  color: $cinza;
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 15rem auto 0 auto;
+
+  a {
+    color: $cinza;
+    font-weight: bold;
   }
 }
 
