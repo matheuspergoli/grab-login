@@ -1,2 +1,79 @@
 @import 'reset';
 @import 'variaveis';
+
+::selection {
+  background-color: $cinza;
+}
+
+body {
+  display: grid;
+  grid-template-columns: minmax(300px, 700px) minmax(400px, 1fr);
+}
+
+.main-content {
+  grid-column: 1 / 2;
+  height: 100vh;
+  background-color: $azul;
+}
+
+.logo {
+  width: 25rem;
+  margin: 25rem auto 0 auto;
+}
+
+.formulario {
+  width: 30rem;
+  margin: 10rem auto 0 auto;
+
+  input {
+    width: 100%;
+    outline: none;
+    padding: 1rem;
+    color: $cinza;
+    text-indent: 35px;
+    font-weight: bold;
+    font-size: 1.6rem;
+    border-radius: 20px;
+    border: 2px solid $cinza;
+    background-color: transparent;
+  }
+
+  input[type="email"] {
+    background-repeat: no-repeat;
+    background-position: left 10px center;
+    background-image: url(../img/email-img.svg);
+  }
+
+  input[type="password"] {
+    background-repeat: no-repeat;
+    background-position: left 10px center;
+    background-image: url(../img/password-img.svg);
+  }
+
+  button {
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    text-align: center;
+    border-radius: 20px;
+    font-family: inherit;
+    background-color: $cinza;
+  }
+  
+  div {
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    position: relative;
+    left: 15px;
+    top: 2px;
+    color: $cinza;
+    text-align: left;
+    font-size: 1.5rem;
+  }
+}
