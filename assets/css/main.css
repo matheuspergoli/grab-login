@@ -25,7 +25,7 @@ a {
 
 body {
   display: grid;
-  grid-template-columns: minmax(320px, 600px) minmax(400px, 1250px);
+  grid-template-columns: minmax(320px, 768px) minmax(400px, 1250px);
 }
 @media (max-width: 768px) {
   body {
@@ -35,8 +35,12 @@ body {
 
 .main-content {
   grid-column: 1/2;
-  height: 100vh;
   background-color: #4E5BEE;
+}
+@media (max-width: 768px) {
+  .main-content {
+    height: 100vh;
+  }
 }
 
 .logo {

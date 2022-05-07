@@ -8,7 +8,7 @@
 
 body {
   display: grid;
-  grid-template-columns: minmax(320px, 600px) minmax(400px ,1250px);
+  grid-template-columns: minmax(320px, 768px) minmax(400px ,1250px);
 
   @include media(768px) {
     grid-template-columns: 1fr;
@@ -17,8 +17,11 @@ body {
 
 .main-content {
   grid-column: 1 / 2;
-  height: 100vh;
   background-color: $azul;
+
+  @include media(768px) {
+    height: 100vh;
+  }
 }
 
 .logo {
