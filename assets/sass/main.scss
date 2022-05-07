@@ -36,23 +36,22 @@ body {
     border-radius: 20px;
     border: 2px solid $cinza;
     background-color: transparent;
-  }
 
-  input.invalido {
-    color: $vermelho;
-    border-color: $vermelho;
-  }
+    &.invalido {
+      border-color: $vermelho;
+    }
 
-  input[type="email"] {
-    background-repeat: no-repeat;
-    background-position: left 10px center;
-    background-image: url(../img/email-img.svg);
-  }
+    &[type="email"] {
+      background-repeat: no-repeat;
+      background-position: left 10px center;
+      background-image: url(../img/email-img.svg);
+    }
 
-  input[type="password"] {
-    background-repeat: no-repeat;
-    background-position: left 10px center;
-    background-image: url(../img/password-img.svg);
+    &[type="password"] {
+      background-repeat: no-repeat;
+      background-position: left 10px center;
+      background-image: url(../img/password-img.svg);
+    }
   }
 
   button {

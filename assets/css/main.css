@@ -56,7 +56,6 @@ body {
   background-color: transparent;
 }
 .formulario input.invalido {
-  color: #FF5757;
   border-color: #FF5757;
 }
 .formulario input[type=email] {
