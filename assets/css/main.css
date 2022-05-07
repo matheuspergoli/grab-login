@@ -25,7 +25,7 @@ a {
 
 body {
   display: grid;
-  grid-template-columns: minmax(300px, 700px) minmax(400px, 1fr);
+  grid-template-columns: minmax(320px, 700px) minmax(400px, 1fr);
 }
 
 .main-content {
@@ -54,6 +54,10 @@ body {
   border-radius: 20px;
   border: 2px solid #F8F8F8;
   background-color: transparent;
+}
+.formulario input.invalido {
+  color: #FF5757;
+  border-color: #FF5757;
 }
 .formulario input[type=email] {
   background-repeat: no-repeat;

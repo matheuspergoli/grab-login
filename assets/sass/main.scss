@@ -7,7 +7,7 @@
 
 body {
   display: grid;
-  grid-template-columns: minmax(300px, 700px) minmax(400px, 1fr);
+  grid-template-columns: minmax(320px, 700px) minmax(400px, 1fr);
 }
 
 .main-content {
@@ -36,6 +36,11 @@ body {
     border-radius: 20px;
     border: 2px solid $cinza;
     background-color: transparent;
+  }
+
+  input.invalido {
+    color: $vermelho;
+    border-color: $vermelho;
   }
 
   input[type="email"] {
